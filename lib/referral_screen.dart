@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mywallet/team_screen1.dart';
 import 'package:mywallet/widget/custom_count_card.dart';
 import 'package:mywallet/widget/custom_referral_card.dart';
 import 'package:mywallet/widget/member_details_card.dart';
@@ -123,6 +124,13 @@ class _ReferralScreenState extends State<ReferralScreen> {
             )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const TeamScreen1()));
+            },
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }
